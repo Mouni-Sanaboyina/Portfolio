@@ -755,70 +755,149 @@
   <div class="section-label">What I've Built</div>
   <div class="section-title">Projects</div>
   <div class="section-divider"></div>
+
   <div class="projects-grid">
 
-    <!-- MindGuardAI -->
+    <!-- 01 MindGuardAI -->
     <div class="project-card">
       <div class="project-num">01</div>
       <div class="project-title">MindGuardAI</div>
-      <div class="project-desc">A unified AI pipeline for content moderation analyzing text, audio, images, and video in a single pass — replacing 4 separate tools.</div>
+      <div class="project-desc">
+        A unified AI pipeline for content moderation analyzing text, audio, images, and video in a single pass — replacing multiple standalone tools.
+      </div>
       <ul class="project-bullets">
-        <li>Eliminated 4 separate moderation tools with one unified AI pipeline, reducing integration overhead by 75%.</li>
-        <li>Integrated OpenAI Whisper for speech-to-text feeding into NLP toxicity scoring.</li>
-        <li>Engineered timestamp-level audio-visual risk detection that flags harmful content at the exact second it occurs.</li>
+        <li>Replaced 4 separate moderation tools with a unified AI pipeline, reducing integration overhead by 75%.</li>
+        <li>Integrated OpenAI Whisper for speech-to-text processing feeding into NLP toxicity detection.</li>
+        <li>Built timestamp-level audio-visual risk detection to flag harmful content at precise moments.</li>
       </ul>
       <div class="project-tech">
-        <span class="tech-badge">Python</span><span class="tech-badge">NLP</span>
-        <span class="tech-badge">OpenAI Whisper</span><span class="tech-badge">FastAPI</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">NLP</span>
+        <span class="tech-badge">OpenAI Whisper</span>
+        <span class="tech-badge">FastAPI</span>
       </div>
       <div class="project-links">
-        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/MindGuardAI" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/MindGuardAI" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       </div>
     </div>
 
-    <!-- Smart Campus -->
+    <!-- 02 Smart Campus -->
     <div class="project-card">
       <div class="project-num">02</div>
-      <div class="project-title">Smart Campus Attendance &amp; NEP System</div>
-      <div class="project-desc">An anti-proxy attendance system using QR codes, GPS validation, and face recognition — with an NEP 2020 aligned course recommender.</div>
+      <div class="project-title">Smart Campus Attendance & NEP System</div>
+      <div class="project-desc">
+        A secure anti-proxy attendance system using QR codes, GPS validation, and face recognition with an integrated course recommendation engine.
+      </div>
       <ul class="project-bullets">
-        <li>Layered QR scanning, GPS proximity (Haversine formula), and face recognition — all 3 mandatory before attendance is marked.</li>
-        <li>Prevented QR reuse attacks by embedding live GPS + configurable expiry in each code.</li>
-        <li>Built a recommendation engine mapping student interests to 50+ NPTEL, Coursera &amp; Udemy courses.</li>
+        <li>Implemented multi-layer verification (QR + GPS + Face Recognition) ensuring 100% authentic attendance tracking.</li>
+        <li>Prevented QR reuse attacks using time-based expiry and geo-validation mechanisms.</li>
+        <li>Developed a recommendation engine mapping student interests to 50+ curated online courses.</li>
       </ul>
       <div class="project-tech">
-        <span class="tech-badge">Python</span><span class="tech-badge">Face Recognition</span>
-        <span class="tech-badge">GPS API</span><span class="tech-badge">ML</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Face Recognition</span>
+        <span class="tech-badge">GPS API</span>
+        <span class="tech-badge">Machine Learning</span>
       </div>
       <div class="project-links">
-        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/smart-campus" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/smart-campus" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       </div>
     </div>
 
-    <!-- IndiArt -->
+    <!-- 03 IndiArt -->
     <div class="project-card">
       <div class="project-num">03</div>
       <div class="project-title">IndiArt Digital Printshop</div>
-      <div class="project-desc">A full-stack custom print ordering platform with secure auth, dynamic product configuration, and multi-stage admin approval workflow.</div>
+      <div class="project-desc">
+        A full-stack custom print ordering platform with secure authentication, dynamic product configuration, and admin-controlled workflow.
+      </div>
       <ul class="project-bullets">
-        <li>Built with React, Node.js, Express, MongoDB &amp; Cloudinary — supporting 3 product types with dynamic size, paper &amp; finish config.</li>
-        <li>Implemented JWT authentication with persistent cart state across sessions.</li>
-        <li>Engineered a 3-stage admin approval workflow (Pending → Approved → Printed) before fulfillment.</li>
+        <li>Built using React, Node.js, Express, and MongoDB supporting dynamic customization of print products.</li>
+        <li>Implemented JWT-based authentication with persistent cart functionality across sessions.</li>
+        <li>Engineered a 3-stage admin workflow (Pending → Approved → Printed) ensuring controlled order fulfillment.</li>
       </ul>
       <div class="project-tech">
-        <span class="tech-badge">React</span><span class="tech-badge">Node.js</span>
-        <span class="tech-badge">Express</span><span class="tech-badge">MongoDB</span>
-        <span class="tech-badge">Cloudinary</span><span class="tech-badge">JWT</span>
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">Express</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">Cloudinary</span>
+        <span class="tech-badge">JWT</span>
       </div>
       <div class="project-links">
-        <a class="project-link" href="https://indiart-digital.vercel.app" target="_blank"><i class="fas fa-globe"></i> Live</a>
-        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/IndiArt-Digital" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a class="project-link" href="https://indiart-digital.vercel.app" target="_blank">
+          <i class="fas fa-globe"></i> Live
+        </a>
+        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/IndiArt-Digital" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- 04 PayPredictor -->
+    <div class="project-card">
+      <div class="project-num">04</div>
+      <div class="project-title">PayPredictor</div>
+      <div class="project-desc">
+        An AI-powered chatbot that predicts salary packages and provides personalized career guidance based on user skills and academic background.
+      </div>
+      <ul class="project-bullets">
+        <li>Developed a Flask-based chatbot with dynamic questionnaires tailored to different academic branches.</li>
+        <li>Implemented AI-based salary prediction (₹ LPA) using skill ratings (1–10 scale).</li>
+        <li>Integrated a local LLM (Gemma via Ollama) for personalized career recommendations and follow-up queries.</li>
+        <li>Managed multi-step user interactions using Flask sessions with a responsive Bootstrap UI.</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Flask</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">Ollama</span>
+        <span class="tech-badge">Gemma</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/PayPredictor" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- 05 Wall Calendar -->
+    <div class="project-card">
+      <div class="project-num">05</div>
+      <div class="project-title">Wall Calendar</div>
+      <div class="project-desc">
+        A high-fidelity interactive wall calendar built with React featuring smooth page-flip animations and an integrated notes system.
+      </div>
+      <ul class="project-bullets">
+        <li>Designed a realistic UI with paper textures, spiral binding, and wall-mounted aesthetics.</li>
+        <li>Implemented smooth two-layer page-flip animations for seamless month transitions.</li>
+        <li>Built an interactive notes panel supporting single-day and range-based entries.</li>
+        <li>Added visual indicators and ensured responsive design across all screen sizes.</li>
+      </ul>
+      <div class="project-tech">
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Create React App</span>
+        <span class="tech-badge">Vercel</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://wall-calendar-real.vercel.app" target="_blank">
+          <i class="fas fa-globe"></i> Live
+        </a>
+        <a class="project-link" href="https://github.com/Mouni-Sanaboyina/Wall-Calendar-.git" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       </div>
     </div>
 
   </div>
-</section>
-
+</section>  
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-label">Where I've Worked</div>
