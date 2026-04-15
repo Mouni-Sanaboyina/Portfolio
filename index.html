@@ -456,40 +456,44 @@
     color: var(--gold); border-radius: 2px;
   }
 
-  /* ── CERTIFICATIONS ── */
-  #certifications { }
+/* ── CERTIFICATIONS ── */
+#certifications { }
 
-  .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+.certs-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  gap: 1.5rem; 
+}
 
-  .cert-card {
-    background: var(--section-bg);
-    border: 1px solid var(--border);
-    padding: 1.5rem;
-    transition: all 0.3s; cursor: pointer;
-    position: relative; overflow: hidden;
-  }
-  .cert-card:hover { border-color: var(--gold); transform: translateY(-3px); }
-  .cert-card:hover .cert-img-placeholder { opacity: 1; }
+.cert-card {
+  background: var(--section-bg);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
 
-  .cert-img-placeholder {
-    width: 100%; aspect-ratio: 16/10;
-    background: var(--navy);
-    border: 1px dashed rgba(201,168,76,0.3);
-    display: flex; align-items: center; justify-content: center;
-    flex-direction: column; gap: 0.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-muted); font-size: 0.8rem;
-    text-align: center; padding: 1rem;
-    transition: opacity 0.3s;
-  }
-  .cert-img-placeholder i { font-size: 1.8rem; color: var(--gold); opacity: 0.5; }
-  .cert-img-placeholder img {
-    width: 100%; height: 100%; object-fit: cover;
-    display: none;
-  }
+.cert-card:hover { 
+  border-color: var(--gold); 
+  transform: translateY(-3px); 
+}
 
-  .cert-name { font-weight: 600; color: var(--white); font-size: 0.9rem; margin-bottom: 0.3rem; }
-  .cert-issuer { font-size: 0.78rem; color: var(--gold); letter-spacing: 1px; }
+/* ✅ ADD THIS BELOW */
+.cert-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-img {
+  transform: scale(1.03);
+}
 
   .coding-section { margin-top: 4rem; }
   .coding-title {
@@ -977,7 +981,12 @@
       <div class="cert-name">C & Data Structures</div>
       <div class="cert-issuer">Smart Interviews</div>
     </div>
-
+    <!-- Python For Data Science -->
+    <div class="cert-card">
+      <img src="Smart-Interviews.jpg" alt="Python For Data Science Certificate" class="cert-img">
+      <div class="cert-name">Python For Data Science</div>
+      <div class="cert-issuer">NPTEL</div>
+    </div>
     <!-- SQL -->
     <div class="cert-card">
       <img src="SQL for Data Science.png" alt="SQL Certificate" class="cert-img">
@@ -998,7 +1007,19 @@
       <div class="cert-name">MongoDB Node.js Developer Path</div>
       <div class="cert-issuer">MongoDB</div>
     </div>
-
+    <!-- Data Science For Engineers -->
+    <div class="cert-card">
+      <img src="ds-nptel.png" alt="Data Science For Engineers Certificate" class="cert-img">
+      <div class="cert-name">Python For Data Science</div>
+      <div class="cert-issuer">NPTEL</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-img-placeholder"> 
+        <i class="fas fa-trophy"></i> 
+        <img src="" alt="Best Performer Trophy" class="cert-img"> 
+      </div> <div class="cert-name">Best Performer Trophy</div>
+      <div class="cert-issuer">Naandi Foundation</div>
+    </div>
   </div>
 </section>
 
