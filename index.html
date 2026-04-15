@@ -487,6 +487,19 @@
     width: 100%; height: 100%; object-fit: cover;
     display: none;
   }
+  .cert-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease;
+  }
+  
+  .cert-card:hover .cert-img {
+    transform: scale(1.03);
+  }
 
   .cert-name { font-weight: 600; color: var(--white); font-size: 0.9rem; margin-bottom: 0.3rem; }
   .cert-issuer { font-size: 0.78rem; color: var(--gold); letter-spacing: 1px; }
@@ -959,51 +972,48 @@
 <!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="section-label">Credentials</div>
-  <div class="section-title">Certifications &amp; Achievements</div>
+  <div class="section-title">Certifications & Achievements</div>
   <div class="section-divider"></div>
 
   <div class="certs-grid">
+
+    <!-- Java -->
     <div class="cert-card">
-      <div class="cert-img-placeholder">
-        <i class="fas fa-certificate"></i>
-        <span>Replace with certificate image</span>
-      </div>
+      <img src="java-spring_board.png" alt="Programming with Java Certificate" class="cert-img">
       <div class="cert-name">Programming with Java</div>
-      <div class="cert-issuer">Infosys Spring Board</div>
+      <div class="cert-issuer">Infosys Springboard</div>
     </div>
+
+    <!-- C & DS -->
     <div class="cert-card">
-      <div class="cert-img-placeholder">
-        <i class="fas fa-certificate"></i>
-        <span>Replace with certificate image</span>
-      </div>
-      <div class="cert-name">C &amp; Data Structures</div>
+      <img src="Smart-Interviews.jpg" alt="C & Data Structures Certificate" class="cert-img">
+      <div class="cert-name">C & Data Structures</div>
       <div class="cert-issuer">Smart Interviews</div>
     </div>
+
+    <!-- SQL -->
     <div class="cert-card">
-      <div class="cert-img-placeholder">
-        <i class="fas fa-certificate"></i>
-        <span>Replace with certificate image</span>
-      </div>
-      <div class="cert-name">Python for Data Science</div>
+      <img src="SQL for Data Science.png" alt="SQL Certificate" class="cert-img">
+      <div class="cert-name">SQL for Data Science</div>
+      <div class="cert-issuer">Great Learning</div>
+    </div>
+
+    <!-- Software Testing -->
+    <div class="cert-card">
+      <img src="Software Testing.png" alt="Software Testing Certificate" class="cert-img">
+      <div class="cert-name">Software Testing</div>
       <div class="cert-issuer">NPTEL</div>
     </div>
+
+    <!-- MongoDB -->
     <div class="cert-card">
-      <div class="cert-img-placeholder">
-        <i class="fas fa-certificate"></i>
-        <span>Replace with certificate image</span>
-      </div>
-      <div class="cert-name">Data Science for Engineers</div>
-      <div class="cert-issuer">NPTEL</div>
+      <img src="MongoDB.png" alt="MongoDB Certificate" class="cert-img">
+      <div class="cert-name">MongoDB Node.js Developer Path</div>
+      <div class="cert-issuer">MongoDB</div>
     </div>
-    <div class="cert-card">
-      <div class="cert-img-placeholder">
-        <i class="fas fa-trophy"></i>
-        <span>Replace with award image</span>
-      </div>
-      <div class="cert-name">Best Performer Trophy</div>
-      <div class="cert-issuer">Naandi Foundation</div>
-    </div>
+
   </div>
+</section>
 
   <!-- Coding Profiles -->
   <div class="coding-section">
